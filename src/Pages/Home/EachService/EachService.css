@@ -1,0 +1,43 @@
+.eachServiceContainer img {
+  width: 220px;
+  display: block;
+  margin: auto;
+}
+
+.eachServiceContainer {
+  width: 300px;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+
+.eachServiceContainer:hover {
+  box-shadow: 2px 3px 10px 2px #888888;
+}
+
+.serviceName {
+  font-size: 24px;
+  margin: 2px 0px;
+}
+
+.servicePrice {
+  font-size: 30px;
+  margin: 2px 0px;
+}
+
+.eachServiceInfo {
+  padding: 0px 30px 20px 30px;
+}
+
+.bookBtn {
+  margin: 0px auto;
+  border: 0px;
+  background: none;
+  font-size: 18px;
+  width: 100%;
+  height: 45px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgba(137, 43, 226, 0.432);
+  color: white;
+  font-weight: 500;
+}

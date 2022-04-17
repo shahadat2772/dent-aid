@@ -1,0 +1,17 @@
+.serviceHeader {
+  color: rgba(105, 6, 151, 0.555);
+  text-align: center;
+}
+
+.servicesContainer {
+  margin-top: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 45px;
+
+  margin: 40px 100px;
+  justify-content: center;
+}
