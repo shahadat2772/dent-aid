@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import {
+  useAuthState,
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
@@ -9,19 +10,19 @@ import "./Login.css";
 import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
+  const [user] = useAuthState(auth);
+  // Navigator
+  const navigate = useNavigate();
   const location = useLocation();
 
   // Getting last location
-  let from = location.state?.from?.pathname || "/";
+  let from = location?.state?.from?.pathname || "/";
 
-  const [signInWithEmailAndPassword, user, loading, error] =
+  const [signInWithEmailAndPassword, signedUpUser, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
   const [sendPasswordResetEmail, sending, resetPasswordError] =
     useSendPasswordResetEmail(auth);
-
-  // Navigator
-  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();

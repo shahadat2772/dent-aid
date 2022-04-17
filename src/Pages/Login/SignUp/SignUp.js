@@ -22,7 +22,7 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
-    setSignupError("");
+    // setSignupError("");
 
     event.preventDefault();
     const displayName = event.target.name.value;
