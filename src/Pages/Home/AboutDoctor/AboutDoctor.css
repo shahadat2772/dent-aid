@@ -1,0 +1,28 @@
+.aboutDocContainer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin: 20px 50px 0px 50px;
+}
+
+.aboutDoctor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.docInfo {
+  margin: 0px 0px 0px 65px;
+}
+
+.docInfo h2 {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 576px) {
+  .aboutDocContainer {
+    grid-template-columns: 1fr;
+  }
+  .docInfo {
+    margin-left: 0px;
+  }
+}

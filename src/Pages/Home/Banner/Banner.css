@@ -19,7 +19,7 @@
 
 .bannerImage::before {
   content: "";
-  background-image: url("../../../images//banner//banner-2.jpg");
+  background-image: url("../../../images//banner//banner-1.jpg");
   background-size: cover;
   position: absolute;
   top: 0px;
