@@ -6,7 +6,7 @@ const SignUp = () => {
   return (
     <div className="formContainer">
       <div className="form">
-        <h2 className="signUpHeader">Register</h2>
+        <h2 className="formHeader">Register</h2>
         <div className="inputs">
           <form action="">
             <input
