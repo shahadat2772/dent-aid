@@ -1,14 +1,60 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../../../firebase.init";
+import "./Login.css";
+import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
+  const [signInWithEmailAndPassword, user, loading, error] =
+    useSignInWithEmailAndPassword(auth);
+
+  const [sendPasswordResetEmail, sending, resetPasswordError] =
+    useSendPasswordResetEmail(auth);
+
+  // Navigator
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const email = event.target.email.value;
+    const password = event.target.password.value;
+
+    await signInWithEmailAndPassword(email, password);
+  };
+  if (user) {
+    navigate(`/home`);
+  }
+
+  const emailRef = useRef("");
+  const resetPassword = () => {
+    const email = emailRef.current.value;
+    if (email) {
+      sendPasswordResetEmail(email);
+      toast("Password reset email sended!");
+    } else {
+      toast("Enter email to reset password", {
+        id: "passwordResetToast",
+      });
+    }
+  };
+
+  if (resetPasswordError) {
+    toast(resetPasswordError.message);
+  }
+
   return (
     <div className="formContainer">
       <div className="form">
         <h2 className="formHeader">Login</h2>
         <div className="inputs">
-          <form action="">
+          <form onSubmit={handleSubmit} action="">
             <input
+              ref={emailRef}
               required
               placeholder="Email"
               type="email"
@@ -22,15 +68,18 @@ const Login = () => {
               id="password"
               required
             />
-
-            <p className="mb-0 my-1"></p>
+            {error && <p className="text-danger">{error.message}</p>}
             <input className="submitButton" type="submit" value="Login" />
           </form>
         </div>
         <Link className="formToggleBtn" to={`/register`}>
           Don't have an account?
         </Link>
+        <button className="passwordResetBtn" onClick={resetPassword}>
+          Forgot password?
+        </button>
       </div>
+      <Toaster />
     </div>
   );
 };

@@ -22,6 +22,8 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
+    setSignupError("");
+
     event.preventDefault();
     const displayName = event.target.name.value;
     const email = event.target.email.value;
@@ -29,13 +31,15 @@ const SignUp = () => {
     const confirmPassword = event.target.confirmPassword.value;
 
     if (password !== confirmPassword) {
-      setSignupError("Password did not matched");
+      setSignupError("Confirm Password did not matched!");
       return;
     }
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName });
-    navigate(`/home`);
   };
+  if (user) {
+    navigate(`/home`);
+  }
 
   return (
     <div className="formContainer">
@@ -71,7 +75,10 @@ const SignUp = () => {
               id="confirmPassword"
               required
             />
-            <p className="mb-0 my-1"></p>
+            {userCreateError && (
+              <p className="text-danger">{userCreateError.message}</p>
+            )}
+            {signupError && <p className="text-danger">{signupError}</p>}
             <input className="submitButton" type="submit" value="Register" />
           </form>
         </div>
