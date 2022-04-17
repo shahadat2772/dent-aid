@@ -3,12 +3,17 @@ import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { auth } from "../../../firebase.init";
 import "./Login.css";
 import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
+  const location = useLocation();
+
+  // Getting last location
+  let from = location.state?.from?.pathname || "/";
+
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
@@ -27,7 +32,7 @@ const Login = () => {
     await signInWithEmailAndPassword(email, password);
   };
   if (user) {
-    navigate(`/home`);
+    navigate(from, { replace: true });
   }
 
   const emailRef = useRef("");

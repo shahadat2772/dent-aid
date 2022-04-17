@@ -1,0 +1,55 @@
+.appointmentFormContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fromContainer {
+  height: 400px;
+  width: 600px;
+  background-color: rgba(105, 6, 151, 0.555);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.from {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upperField input {
+  display: block;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  padding: 6px;
+}
+.upperField {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.textAreaField textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  padding: 6px;
+  border: 0;
+}
+
+.appointMentButton {
+  display: block;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(174, 0, 255, 0.842);
+  margin-top: 5px;
+}
