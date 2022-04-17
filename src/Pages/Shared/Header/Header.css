@@ -4,11 +4,6 @@
 
 .navbar {
   background-color: rgba(105, 6, 151, 0.555);
-  /* background-color: #486683; */
-  /* background-color: #00bfb2; */
-  /* background: transparent; */
-  /* position: absolute; */
-  /* z-index: 4; */
 }
 
 .links a {
@@ -19,8 +14,6 @@
 .headerText {
   margin: 0;
   font-size: 35px;
-  /* color: #002345; */
-  /* color: #ffffff; */
 }
 
 .logOutBtn {
