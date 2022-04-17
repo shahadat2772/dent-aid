@@ -8,7 +8,11 @@ const Banner = () => {
         <h1>
           Your Smile <br /> Matters.
         </h1>
-        <p>DentAid is serving for last 7 year with a great rep</p>
+        <p>
+          DentAid is serving for last 7 year with a great reputation. DentAid
+          understands you.
+        </p>
+        <button>Our Services</button>
       </div>
     </div>
   );
