@@ -22,3 +22,11 @@
   /* color: #002345; */
   /* color: #ffffff; */
 }
+
+.logOutBtn {
+  font-size: 18px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+}
