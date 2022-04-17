@@ -53,3 +53,17 @@
   color: rgba(174, 0, 255, 0.842);
   margin-top: 5px;
 }
+
+/* Breack points for appointmetn form  */
+@media only screen and (max-width: 576px) {
+  .from {
+    width: 300px;
+  }
+  .upperField {
+    grid-template-columns: 1fr;
+  }
+  .fromContainer {
+    width: 320px;
+    height: 500px;
+  }
+}
