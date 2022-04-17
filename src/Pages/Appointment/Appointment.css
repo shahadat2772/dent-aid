@@ -54,6 +54,16 @@
   margin-top: 5px;
 }
 
+.appointmentHeader {
+  margin: 0px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: white;
+}
+.selectedServiceName {
+  margin-bottom: 0px;
+}
+
 /* Breack points for appointmetn form  */
 @media only screen and (max-width: 576px) {
   .from {

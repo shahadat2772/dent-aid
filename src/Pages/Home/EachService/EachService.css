@@ -40,4 +40,9 @@
   background-color: rgba(137, 43, 226, 0.432);
   color: white;
   font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.bookBtn:hover {
+  background-color: rgba(137, 43, 226, 0.705);
 }
