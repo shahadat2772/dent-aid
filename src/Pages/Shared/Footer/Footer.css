@@ -1,0 +1,39 @@
+.lowerFooter p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: rgb(40, 43, 43);
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.upperFooter {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.footerContainer {
+  width: max-content;
+}
+
+.upperFooter button {
+  border: 0;
+  height: 30px;
+  display: block;
+}
+.upperFooter input {
+  border: 0;
+  height: 30px;
+  display: block;
+}

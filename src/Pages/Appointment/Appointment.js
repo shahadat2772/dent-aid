@@ -63,7 +63,7 @@ const Appointment = () => {
         <div className="from">
           <p className="appointmentHeader">
             BOOK AN APPOINTMENT{" "}
-            {selectedService.name && (
+            {selectedService?.name && (
               <span>FOR {selectedService.name.toUpperCase()}</span>
             )}
           </p>

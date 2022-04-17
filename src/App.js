@@ -7,6 +7,7 @@ import SignUp from "./Pages/Login/SignUp/SignUp";
 import Login from "./Pages/Login/Login/Login";
 import Appointment from "./Pages/Appointment/Appointment";
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
+import Footer from "./Pages/Shared/Footer/Footer";
 
 function App() {
   return (
@@ -25,7 +26,16 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route
+          path="/appointment"
+          element={
+            <RequireAuth>
+              <Appointment></Appointment>
+            </RequireAuth>
+          }
+        ></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
