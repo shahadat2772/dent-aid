@@ -1,0 +1,15 @@
+.qnaContainer {
+  width: 580px;
+  margin: 30px auto;
+}
+
+.qna {
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 576px) {
+  .qnaContainer {
+    width: 300px;
+    margin: 30px auto;
+  }
+}
