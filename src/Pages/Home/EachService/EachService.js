@@ -6,7 +6,7 @@ const EachService = ({ service }) => {
   const navigate = useNavigate();
 
   const { img, name, description, id, price } = service;
-  console.log(id);
+
   return (
     <div className="eachServiceContainer">
       <img src={img} alt="" />
