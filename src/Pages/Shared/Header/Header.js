@@ -26,11 +26,18 @@ const Header = () => {
               <Nav.Link as={Link} to="home">
                 <p className="navLinks">Home</p>
               </Nav.Link>
-              <Nav.Link href="home#services">
+              <Nav.Link href="/home/#services">
                 <p className="navLinks">Services</p>
               </Nav.Link>
+
               <Nav.Link as={Link} to="/appointment">
-                <p className="navLinks">Appointment</p>
+                <p className="navLinks">Appointments</p>
+              </Nav.Link>
+              <Nav.Link as={Link} to="/blogs">
+                <p className="navLinks">Blogs</p>
+              </Nav.Link>
+              <Nav.Link as={Link} to="/appointment">
+                <p className="navLinks">About</p>
               </Nav.Link>
               {user ? (
                 <button onClick={handleSignOut} className="logOutBtn">

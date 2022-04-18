@@ -7,22 +7,24 @@ const Footer = () => {
   let year = date.getFullYear();
 
   return (
-    <footer className="footer">
-      <div className="footerContainer">
-        <h3 className="text-white">Newsletter</h3>
+    <div className="footerComponent">
+      <footer className="footer">
+        <div className="footerContainer">
+          <h3 className="text-white">Newsletter</h3>
 
-        <p className="text-white">
-          Subscribe to our newsletter and get <br /> 10% discount for your next
-          appointment.
-        </p>
+          <p className="text-white">
+            Subscribe to our newsletter and get <br /> 10% discount for your
+            next appointment.
+          </p>
 
-        <div className="upperFooterInputAndBtnContainer">
-          <input type="" placeholder="Enter your email..." />
-          <button>Subscribe</button>
+          <div className="upperFooterInputAndBtnContainer">
+            <input type="" placeholder="Enter your email..." />
+            <button>Subscribe</button>
+          </div>
         </div>
-      </div>
-      <p className="copyrightText">© {year} DentAid. All Rights Reserved</p>
-    </footer>
+        <p className="copyrightText">© {year} DentAid. All Rights Reserved</p>
+      </footer>
+    </div>
   );
 };
 

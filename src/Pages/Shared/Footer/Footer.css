@@ -10,6 +10,8 @@
 .footer {
   background-color: rgb(53, 58, 58);
   height: max-content;
+  /* position: absolute; */
+  /* position: absolute; */
 }
 
 .footerContainer {
@@ -26,6 +28,7 @@
   margin-top: 20px;
   padding-bottom: 5px;
 }
+
 .upperFooterInputAndBtnContainer {
   position: relative;
 }
