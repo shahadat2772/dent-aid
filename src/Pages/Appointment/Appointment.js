@@ -60,7 +60,7 @@ const Appointment = () => {
   return (
     <div className="appointmentFormContainer">
       <div className="fromContainer">
-        <div className="from">
+        <from className="from">
           <p className="appointmentHeader">
             BOOK AN APPOINTMENT{" "}
             {selectedService?.name && (
@@ -83,7 +83,7 @@ const Appointment = () => {
             ></textarea>
           </div>
           <input className="appointMentButton" type="submit" value="Submit" />
-        </div>
+        </from>
       </div>
     </div>
   );

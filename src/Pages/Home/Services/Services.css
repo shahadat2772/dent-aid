@@ -1,17 +1,18 @@
 .serviceHeader {
-  color: rgba(105, 6, 151, 0.555);
+  /* color: rgba(105, 6, 151, 0.555); */
+  color: #336f8a;
   text-align: center;
 }
 
 .servicesContainer {
-  margin-top: 40px;
+  margin-top: 65px;
 }
 
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 45px;
-  margin: 40px 100px;
+  margin: 65px 120px;
   justify-content: center;
 }
 

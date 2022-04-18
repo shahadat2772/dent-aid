@@ -10,18 +10,18 @@ const Footer = () => {
     <footer className="footer">
       <div className="footerContainer">
         <h3 className="text-white">Newsletter</h3>
+
         <p className="text-white">
           Subscribe to our newsletter and get <br /> 10% discount for your next
           appointment.
         </p>
-        <div className="upperFooter">
+
+        <div className="upperFooterInputAndBtnContainer">
           <input type="" placeholder="Enter your email..." />
           <button>Subscribe</button>
         </div>
-        <div className="lowerFooter">
-          <p>© {year} DentAid. All Rights Reserved</p>
-        </div>
       </div>
+      <p className="copyrightText">© {year} DentAid. All Rights Reserved</p>
     </footer>
   );
 };
