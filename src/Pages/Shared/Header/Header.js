@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div className="navContainer">
-      <Navbar className="navbar" variant="dark" collapseOnSelect expand="lg">
+      <Navbar className="navbar" variant="light" collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/home">
             <p className="headerText">DentAid</p>
