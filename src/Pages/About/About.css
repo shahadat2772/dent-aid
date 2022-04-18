@@ -1,0 +1,15 @@
+.aboutMeContainer {
+  width: 550px;
+  margin: 120px auto;
+}
+
+.aboutMeContainer h2 {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  .aboutMeContainer {
+    width: 300px;
+    margin: 120px auto;
+  }
+}

@@ -1,3 +1,16 @@
+# Welcome to DentAid
+
+## Visit [DentAid](https://dentaid-bc9ec.web.app/)
+
+## Some functionality of DentAid:
+
+- Got authentication activated .
+- Super simple and easy to use.
+- Got social authentication which provides a user a simultaneous experience.
+- Got toast for showing error or other important messages.
+- Have forgot password option, so that the user no need to worry if they forgot there password.
+- The whole site is responsive for both desktop and mobile.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
