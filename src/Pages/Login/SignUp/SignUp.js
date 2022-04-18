@@ -5,14 +5,15 @@ import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
-
 import "./SignUp.css";
 import { async } from "@firebase/util";
 
 const SignUp = () => {
+  // Create user hook
   const [createUserWithEmailAndPassword, user, loading, userCreateError] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
+  // User profile update hook
   const [updateProfile, updating, userProfileerror] = useUpdateProfile(auth);
 
   // Error state

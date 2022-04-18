@@ -10,6 +10,7 @@ import "./Login.css";
 import toast, { Toaster } from "react-hot-toast";
 
 const Login = () => {
+  // Auth state hook
   const [user] = useAuthState(auth);
   // Navigator
   const navigate = useNavigate();
@@ -18,9 +19,11 @@ const Login = () => {
   // Getting last location
   let from = location?.state?.from?.pathname || "/";
 
+  // Sign in Hook
   const [signInWithEmailAndPassword, signedUpUser, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
+  // Password Reset hook
   const [sendPasswordResetEmail, sending, resetPasswordError] =
     useSendPasswordResetEmail(auth);
 
@@ -37,6 +40,7 @@ const Login = () => {
   }
 
   const emailRef = useRef("");
+  // Password reset
   const resetPassword = () => {
     const email = emailRef.current.value;
     if (email) {
@@ -49,8 +53,9 @@ const Login = () => {
     }
   };
 
+  // Toast for password reset error
   if (resetPasswordError) {
-    toast(resetPasswordError.message);
+    toast(resetPasswordError.message, { id: "passwordResetErrorToast" });
   }
 
   return (
