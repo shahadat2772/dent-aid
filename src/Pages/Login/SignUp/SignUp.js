@@ -7,6 +7,7 @@ import {
 } from "react-firebase-hooks/auth";
 import "./SignUp.css";
 import { async } from "@firebase/util";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const SignUp = () => {
   // Create user hook
@@ -86,6 +87,7 @@ const SignUp = () => {
         <Link className="formToggleBtn" to={`/login`}>
           Already have an account?
         </Link>
+        <SocialLogin></SocialLogin>
       </div>
     </div>
   );

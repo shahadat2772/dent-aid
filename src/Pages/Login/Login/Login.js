@@ -8,6 +8,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { auth } from "../../../firebase.init";
 import "./Login.css";
 import toast, { Toaster } from "react-hot-toast";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Login = () => {
   // Auth state hook
@@ -89,6 +90,7 @@ const Login = () => {
         <button className="passwordResetBtn" onClick={resetPassword}>
           Forgot password?
         </button>
+        <SocialLogin></SocialLogin>
       </div>
       <Toaster />
     </div>
