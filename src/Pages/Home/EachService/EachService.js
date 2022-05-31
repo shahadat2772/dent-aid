@@ -5,7 +5,7 @@ import "./EachService.css";
 const EachService = ({ service }) => {
   const navigate = useNavigate();
 
-  const { img, name, description, id, price } = service;
+  const { img, name, description, _id, price } = service;
 
   return (
     <div className="eachServiceContainer">
@@ -16,7 +16,7 @@ const EachService = ({ service }) => {
         <p className="serviceDescription">{description}</p>
       </div>
       <button
-        onClick={() => navigate(`/appointment/${id}`)}
+        onClick={() => navigate(`/appointment/${_id}`)}
         className="bookBtn"
       >
         Book Appointment

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Loading from "../Shared/Loading/Loading";
 import "./Appointment.css";
 
@@ -52,8 +52,13 @@ const services = [
 
 const Appointment = () => {
   const { id } = useParams();
+  const [service, setService] = useState({});
 
-  const selectedService = services.find((service) => service.id == id);
+  useEffect(() => {
+    fetch(`http://localhost:5000/service/${id}`)
+      .then((res) => res.json())
+      .then((data) => setService(data));
+  }, [id]);
 
   return (
     <div className="appointmentFormContainer">
@@ -61,9 +66,7 @@ const Appointment = () => {
         <div className="from">
           <p className="appointmentHeader">
             BOOK AN APPOINTMENT{" "}
-            {selectedService?.name && (
-              <span>FOR {selectedService.name.toUpperCase()}</span>
-            )}
+            {service?.name && <span>FOR {service.name.toUpperCase()}</span>}
           </p>
           <div className="upperField">
             <input placeholder="Your name" type="text" name="" id="" />
