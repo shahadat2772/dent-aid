@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/nzBSTMB/basic-checkup.png",
+    "name": "Basic Checkup",
+    "price": 11.99,
+    "description": "Regular basic checkup can halp to prevent many fatal problems."
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/HgCRcyy/whitning.png",
+    "name": "Oral Hygiene",
+    "price": 13.99,
+    "description": "To make your smile even stronger."
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/CJXzYqP/implants.png",
+    "name": "Implant",
+    "price": 99.99,
+    "description": "Lose your teeth? It's the best time to get back."
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/g9Y8F6B/orthodontics.png",
+    "name": "Orthodontics",
+    "price": 111.99,
+    "description": "Now your smile will even more perfect."
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/w4H8RXX/root-canals.png",
+    "name": "Root Canal",
+    "price": 49.99,
+    "description": "Don't west time if you don't want to lose your real teeth."
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/Zmr9zt2/fillings.png",
+    "name": "Filling",
+    "price": 29.99,
+    "description": "Early filling can help you get back your teeth without root canal."
+  }
+]
