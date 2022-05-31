@@ -15,9 +15,12 @@
 }
 
 .footerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* padding: 18px 30px 0px 30px; */
+  padding-top: 20px;
   width: max-content;
   margin: 0px auto;
-  padding-top: 10px;
 }
 
 .copyrightText {
@@ -25,7 +28,7 @@
   margin: 0;
   text-align: center;
   color: rgb(161, 159, 159);
-  margin-top: 20px;
+  margin-top: 30px;
   padding-bottom: 5px;
 }
 
@@ -51,4 +54,19 @@
   color: #336f8a;
   font-weight: 500;
   border-top-right-radius: 10px;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  display: block;
+  /* text-align: center; */
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 576px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
