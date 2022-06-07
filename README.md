@@ -4,7 +4,9 @@
 
 ## Some functionality of DentAid:
 
-- Got authentication activated .
+- Users are able to book an appointment.
+- Addressed user authentication with firebase.
+- Handled errors related to authentication, authorization, etc.
 - Super simple and easy to use.
 - Got social authentication which provides a user a simultaneous experience.
 - Got toast for showing error or other important messages.
